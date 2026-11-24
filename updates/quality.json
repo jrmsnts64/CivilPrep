@@ -1,0 +1,13 @@
+{
+  "baseQuestions": 500,
+  "professionalVariants": 90,
+  "records": 590,
+  "exactDuplicates": 0,
+  "mathChecked": 130,
+  "numericalRecords": 130,
+  "factualReferences": 6,
+  "repeatedTemplateGroups": 31,
+  "editorialReview": "pending",
+  "note": "Structural checks and covered arithmetic only; reference links and question templates are not independent content validation.",
+  "checkedAt": "2026-11-24T08:15:05+00:00"
+}
