@@ -1,0 +1,17 @@
+{
+  "bankVersion": "2.5",
+  "lastBankUpdate": "2026-11-24",
+  "lastPublishedCount": 25,
+  "scopeDate": "2027-03-14",
+  "calendar": [
+    "2027-03-14",
+    "2027-08-08"
+  ],
+  "publishedCycles": [],
+  "pendingCycle": null,
+  "candidateCount": 0,
+  "sourceReviewRequired": false,
+  "lastMonitorRun": null,
+  "sources": [],
+  "advisories": []
+}

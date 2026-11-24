@@ -1,0 +1,7 @@
+# CivilPrep v2.5 – targeted question bank revision
+
+25 original replacements (5 per category), 500 base slots and existing 90 Professional variants retained. Difficulty counts unchanged. The new items were authored based on CSC scope and publicly accessible independent reviewer topic guides, not copied from Facebook. Direct Facebook post/comment access was restricted; no Facebook answers were imported or verified. Existing 475 base items and 90 variants are retained, not independently revalidated by this update. Five General Information replacements include primary references; other items use worked calculations or language/logic rules. This is a practice resource, not an official CSC reviewer.
+
+Sources for topic research: https://cse.ph/reviewers/cse/online-reviewer-quiz/ ; https://csepass.ph/civil-service-exam-reviewer ; https://www.csc.gov.ph/examination-advisories/examination-announcement-no-06-s-2026-career-service-examination-pen-and-paper-test-for-professional-and-sub-professional-levels-14-march-2027
+
+GitHub update: finish any ongoing review first, then replace questions.js, difficulty.js and sw.js in the existing repository root. Existing data keys are unchanged. Replaced questions use new IDs; retired question bookmarks and retries are no longer shown. An unfinished session with retired questions cannot resume. New session comparisons start with question bank version 2.5; past session history remains. Select Update available or reopen the app after deployment. No automatic Facebook scraping or live source monitoring was added.

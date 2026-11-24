@@ -1,3 +1,3 @@
-# CivilPrep v2.4 - GitHub Pages test
+# CivilPrep v2.6 — Seasonal Update Edition
 
-Noncommercial phone testing build. Upload the extracted contents, including assets and icons, to the root of a public repository. Settings > Pages > Deploy from a branch > main > /(root). Open the published HTTPS URL. Automatic CSC synchronization requires a separate backend; use official links in Announcements. Scores are stored locally per browser. No APK or payment integration is included. Question bank has not undergone independent content validation.
+Static hybrid/PWA testing build, based on v2.5 and the mobile-aligned GitHub version. See `SEASONAL-UPDATE.md` for installation and approval steps. Existing reviewer, Tabby, analytics, local progress, 500 base questions and 90 Professional variants retained. No paid AI API, no live exam questions, no Facebook scraping. Public noncommercial GitHub Pages testing only.

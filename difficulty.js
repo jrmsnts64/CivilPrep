@@ -1,6 +1,6 @@
 // Editorial practice difficulty, not official CSC weighting or calibrated item difficulty.
 window.CP_DIFFICULTY=(()=>{
- const version='2.2', tiers=['Easy','Moderate','Difficult'];
+ const version='2.5', tiers=['Easy','Moderate','Difficult'];
  const weights={Professional:[20,50,30],Subprofessional:[50,40,10]};
  function pool(level,questions,config){return questions.filter(q=>config.levels[level].includes(q.category)).map(q=>{let {professionalVariant,...base}=q;return level==='Professional'&&professionalVariant?professionalVariant:base})}
  function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}

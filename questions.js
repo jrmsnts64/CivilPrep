@@ -1808,84 +1808,89 @@ window.QUESTIONS=[
   "difficulty": "Moderate"
  },
  {
-  "id": 294,
+  "id": 2501,
   "category": "General Information",
-  "question": "What does UDHR Article 26 recognize?",
+  "question": "A local learning center excludes a student solely because the student is poor. Which right in the Universal Declaration of Human Rights is most directly relevant to access to learning?",
   "choices": [
    "Right to education",
-   "Right to avoid all laws",
-   "Right to public office without qualifications",
-   "Right to own weapons"
+   "Right to own property",
+   "Right to nationality",
+   "Right to rest and leisure"
   ],
   "answer": 0,
-  "explanation": "Article 26 recognizes the right to education.",
-  "source": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+  "explanation": "UDHR Article 26 recognizes education as a human right. The other options address different rights.",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24",
+  "source": "https://www.un.org/en/about-us/universal-declaration-of-human-rights"
  },
  {
-  "id": 295,
+  "id": 2502,
   "category": "General Information",
-  "question": "Which UDHR right supports expressing views without interference?",
+  "question": "A public employee uses confidential bidding information to give a friend an advantage. Under RA 6713, which prohibited act best describes this conduct?",
   "choices": [
-   "Freedom of opinion and expression",
-   "Right to exile others",
-   "Right to private monopoly",
-   "Right to censor all opinions"
+   "Political campaigning",
+   "Misuse of confidential information",
+   "Failure to submit a SALN",
+   "Unlawful absence"
+  ],
+  "answer": 1,
+  "explanation": "RA 6713 Section 7(c) prohibits using nonpublic official information for private benefit or undue advantage.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24",
+  "source": "https://lawphil.net/statutes/repacts/ra1989/ra_6713_1989.html"
+ },
+ {
+  "id": 2503,
+  "category": "General Information",
+  "question": "Residents gather peacefully to discuss a proposed local ordinance. Which right under UDHR Article 20 applies most directly?",
+  "choices": [
+   "Freedom of peaceful assembly",
+   "Right to a nationality",
+   "Right to social security",
+   "Right to own property"
   ],
   "answer": 0,
-  "explanation": "Article 19 protects opinion and expression.",
-  "source": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
- },
- {
-  "id": 296,
-  "category": "General Information",
-  "question": "What does UDHR Article 20 protect?",
-  "choices": [
-   "Compulsory association",
-   "Forced labor",
-   "Peaceful assembly and association",
-   "Arbitrary detention"
-  ],
-  "answer": 2,
   "explanation": "Article 20 protects peaceful assembly and association.",
-  "source": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24",
+  "source": "https://www.un.org/en/about-us/universal-declaration-of-human-rights"
  },
  {
-  "id": 297,
+  "id": 2504,
   "category": "General Information",
-  "question": "What does UDHR Article 25 address?",
+  "question": "An office proposes burning collected solid waste in an open yard. Under RA 9003, which assessment is correct?",
   "choices": [
-   "Election qualifications",
-   "Military command",
-   "Tax rates",
-   "Adequate standard of living and well-being"
+   "Allowed whenever the waste is dry",
+   "Prohibited as open burning of solid waste",
+   "Required before recycling",
+   "Allowed if the yard belongs to the government"
   ],
-  "answer": 3,
-  "explanation": "Article 25 recognizes an adequate standard of living for health and well-being.",
-  "source": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+  "answer": 1,
+  "explanation": "RA 9003 Section 48(3) prohibits open burning of solid waste.",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24",
+  "source": "https://lawphil.net/statutes/repacts/ra2001/ra_9003_2001.html"
  },
  {
-  "id": 298,
+  "id": 2505,
   "category": "General Information",
-  "question": "Which body must have its approved annual appropriations automatically and regularly released under Article XIII, Section 17(4)?",
+  "question": "A person is denied access to the courts solely because of poverty. Which constitutional provision is most directly relevant?",
   "choices": [
-   "House of Representatives",
-   "Department of Health",
-   "Commission on Human Rights",
-   "Department of Education"
+   "Article III, Section 11",
+   "Article VI, Section 2",
+   "Article VII, Section 4",
+   "Article IX-A, Section 1"
   ],
-  "answer": 2,
-  "explanation": "Article XIII, Section 17(4) provides for automatic and regular release of the CHR approved annual appropriations.",
-  "source": "https://lawphil.net/consti/cons1987.html",
+  "answer": 0,
+  "explanation": "The Bill of Rights protects access to courts and adequate legal assistance against denial because of poverty.",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24",
+  "source": "https://lawphil.net/consti/cons1987.html"
  },
  {
   "id": 299,
@@ -2800,84 +2805,84 @@ window.QUESTIONS=[
   "difficulty": "Easy"
  },
  {
-  "id": 96,
+  "id": 2506,
   "category": "Clerical Skills",
-  "question": "File the following reference numbers in ascending numerical order. Which entry belongs in position 1?",
+  "question": "Which word is spelled correctly?",
   "choices": [
-   "REC-1290",
-   "REC-1247",
-   "REC-1257",
-   "REC-1255"
-  ],
-  "answer": 1,
-  "explanation": "Arrange the numeric portions from smallest to largest: REC-1247, REC-1255, REC-1257, REC-1290.",
-  "source": "",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Easy"
- },
- {
-  "id": 97,
-  "category": "Clerical Skills",
-  "question": "File the following reference numbers in ascending numerical order. Which entry belongs in position 2?",
-  "choices": [
-   "REC-1307",
-   "REC-1264",
-   "REC-1274",
-   "REC-1272"
-  ],
-  "answer": 3,
-  "explanation": "Arrange the numeric portions from smallest to largest: REC-1264, REC-1272, REC-1274, REC-1307.",
-  "source": "",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Easy"
- },
- {
-  "id": 98,
-  "category": "Clerical Skills",
-  "question": "File the following reference numbers in ascending numerical order. Which entry belongs in position 3?",
-  "choices": [
-   "REC-1324",
-   "REC-1281",
-   "REC-1291",
-   "REC-1289"
-  ],
-  "answer": 2,
-  "explanation": "Arrange the numeric portions from smallest to largest: REC-1281, REC-1289, REC-1291, REC-1324.",
-  "source": "",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Easy"
- },
- {
-  "id": 99,
-  "category": "Clerical Skills",
-  "question": "File the following reference numbers in ascending numerical order. Which entry belongs in position 4?",
-  "choices": [
-   "REC-1341",
-   "REC-1298",
-   "REC-1308",
-   "REC-1306"
+   "Acquaintance",
+   "Acquaintence",
+   "Aquantance",
+   "Acquiantance"
   ],
   "answer": 0,
-  "explanation": "Arrange the numeric portions from smallest to largest: REC-1298, REC-1306, REC-1308, REC-1341.",
-  "source": "",
+  "explanation": "The standard spelling is acquaintance, with the sequence acquaint followed by ance.",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Easy"
+  "difficulty": "Easy",
+  "contentReviewDate": "2026-11-24"
  },
  {
-  "id": 100,
+  "id": 2507,
   "category": "Clerical Skills",
-  "question": "File the following reference numbers in ascending numerical order. Which entry belongs in position 1?",
+  "question": "Which word is spelled correctly?",
   "choices": [
-   "REC-1358",
-   "REC-1315",
-   "REC-1325",
-   "REC-1323"
+   "Seperate",
+   "Separate",
+   "Separete",
+   "Seperrate"
   ],
   "answer": 1,
-  "explanation": "Arrange the numeric portions from smallest to largest: REC-1315, REC-1323, REC-1325, REC-1358.",
-  "source": "",
+  "explanation": "Separate uses a after the p: sep-a-rate.",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Easy"
+  "difficulty": "Easy",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2508,
+  "category": "Clerical Skills",
+  "question": "Which word is spelled correctly?",
+  "choices": [
+   "Maintenance",
+   "Maintanance",
+   "Maintenence",
+   "Maintainance"
+  ],
+  "answer": 0,
+  "explanation": "The standard noun spelling is maintenance.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Easy",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2509,
+  "category": "Clerical Skills",
+  "question": "File by surname, then given name. Which entry comes first?",
+  "choices": [
+   "Garcia, Rene",
+   "Garcia, Ana",
+   "Gomez, Bea",
+   "Garcia, Luz"
+  ],
+  "answer": 1,
+  "explanation": "Garcia comes before Gomez. Among the Garcia entries, Ana precedes Luz and Rene.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Easy",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2510,
+  "category": "Clerical Skills",
+  "question": "Which reference comes immediately after INV-0098 when the following references are filed in ascending numerical order?",
+  "choices": [
+   "INV-0102",
+   "INV-0095",
+   "INV-0100",
+   "INV-0098"
+  ],
+  "answer": 2,
+  "explanation": "The order is 95, 98, 100, 102. The next listed number after 98 is 100.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Easy",
+  "contentReviewDate": "2026-11-24"
  },
  {
   "id": 301,
@@ -5480,84 +5485,84 @@ window.QUESTIONS=[
   "scopeVersion": "2027-03-14"
  },
  {
-  "id": 1096,
+  "id": 2511,
   "category": "Numerical Skills",
-  "question": "Find the missing term: 19, 31, 43, ___, where the next increment is three times the first increment.",
+  "question": "A tank is 3/5 full. After 24 liters are added, it is 9/10 full. What is its total capacity in liters?",
   "choices": [
-   "79",
-   "81",
-   "77",
-   "83"
-  ],
-  "answer": 0,
-  "explanation": "The third term is 43. Add 36 to get 79.",
-  "difficulty": "Moderate",
-  "source": "",
-  "scopeVersion": "2027-03-14"
- },
- {
-  "id": 1097,
-  "category": "Numerical Skills",
-  "question": "A supply order costs ₱1200. A 25% discount is applied, then a ₱50 delivery fee is added. What is the total in pesos?",
-  "choices": [
-   "950",
-   "975",
-   "925",
-   "1000"
-  ],
-  "answer": 0,
-  "explanation": "1200 × 0.75 + 50 = 950.",
-  "difficulty": "Moderate",
-  "source": "",
-  "scopeVersion": "2027-03-14"
- },
- {
-  "id": 1098,
-  "category": "Numerical Skills",
-  "question": "The ratio of filed to pending records is 3:5. If 42 records are filed and 4 more become pending, how many are pending now?",
-  "choices": [
-   "74",
-   "76",
+   "60",
    "72",
-   "78"
+   "80",
+   "96"
   ],
-  "answer": 0,
-  "explanation": "42 ÷ 3 × 5 + 4 = 74.",
+  "answer": 2,
+  "explanation": "The increase is 9/10 − 3/5 = 3/10 of capacity. Divide 24 by 3/10 to obtain 80 liters.",
   "difficulty": "Moderate",
-  "source": "",
-  "scopeVersion": "2027-03-14"
+  "scopeVersion": "2027-03-14",
+  "contentReviewDate": "2026-11-24"
  },
  {
-  "id": 1099,
+  "id": 2512,
   "category": "Numerical Skills",
-  "question": "A clerk processes 84 forms in 3 hours. Another clerk processes 5 more forms per hour. What is the second clerk’s hourly rate?",
+  "question": "A worker completes a task in 6 hours. Another completes the same task in 12 hours. At constant rates, how long will they take together?",
   "choices": [
-   "33",
-   "34",
-   "32",
-   "35"
+   "3 hours",
+   "4 hours",
+   "6 hours",
+   "9 hours"
   ],
-  "answer": 0,
-  "explanation": "84 ÷ 3 + 5 = 33.",
+  "answer": 1,
+  "explanation": "Their combined hourly rate is 1/6 + 1/12 = 1/4 of the job. One job therefore takes 4 hours.",
   "difficulty": "Moderate",
-  "source": "",
-  "scopeVersion": "2027-03-14"
+  "scopeVersion": "2027-03-14",
+  "contentReviewDate": "2026-11-24"
  },
  {
-  "id": 1100,
+  "id": 2513,
   "category": "Numerical Skills",
-  "question": "Find the missing term: 20, 33, 46, ___, where the next increment is three times the first increment.",
+  "question": "A mother is 36 years old and her child is 12. In how many years will the mother be twice as old as her child?",
   "choices": [
-   "85",
-   "87",
-   "83",
-   "89"
+   "6",
+   "10",
+   "12",
+   "18"
+  ],
+  "answer": 2,
+  "explanation": "Let x be the years from now. 36 + x = 2(12 + x), so x = 12. Their ages will be 48 and 24.",
+  "difficulty": "Moderate",
+  "scopeVersion": "2027-03-14",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2514,
+  "category": "Numerical Skills",
+  "question": "A vehicle travels 60 km at 30 km/h and another 60 km at 60 km/h. What is its average speed for the entire trip?",
+  "choices": [
+   "40 km/h",
+   "45 km/h",
+   "50 km/h",
+   "60 km/h"
   ],
   "answer": 0,
-  "explanation": "The third term is 46. Add 39 to get 85.",
+  "explanation": "The two travel times are 2 hours and 1 hour. Total distance divided by total time is 120/3 = 40 km/h.",
   "difficulty": "Moderate",
-  "source": "",
-  "scopeVersion": "2027-03-14"
+  "scopeVersion": "2027-03-14",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2515,
+  "category": "Numerical Skills",
+  "question": "Find the next number if the operations alternate between multiplying by 2 and adding 3: 4, 8, 11, 22, 25, ___.",
+  "choices": [
+   "28",
+   "47",
+   "50",
+   "53"
+  ],
+  "answer": 2,
+  "explanation": "The operations alternate ×2 and +3. After 25, multiply by 2 to obtain 50.",
+  "difficulty": "Moderate",
+  "scopeVersion": "2027-03-14",
+  "contentReviewDate": "2026-11-24"
  },
  {
   "id": 1101,
@@ -6745,79 +6750,84 @@ window.QUESTIONS=[
   "difficulty": "Moderate"
  },
  {
-  "id": 416,
+  "id": 2516,
   "category": "Abstract / Analytical Skills",
-  "question": "All novels are books. All books are publications. Which conclusion necessarily follows?",
+  "question": "If a document is approved, it is entered in the register. A particular document is not entered in the register. Which conclusion follows from these statements?",
   "choices": [
-   "No novels are publications.",
-   "All books are novels.",
-   "All publications are novels.",
-   "All novels are publications."
-  ],
-  "answer": 3,
-  "explanation": "The two universal premises imply that all novels belong to the group publications.",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
- },
- {
-  "id": 417,
-  "category": "Abstract / Analytical Skills",
-  "question": "All buses are vehicles. All vehicles are machines. Which conclusion necessarily follows?",
-  "choices": [
-   "All machines are buses.",
-   "No buses are machines.",
-   "All vehicles are buses.",
-   "All buses are machines."
-  ],
-  "answer": 3,
-  "explanation": "The two universal premises imply that all buses belong to the group machines.",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
- },
- {
-  "id": 418,
-  "category": "Abstract / Analytical Skills",
-  "question": "All mangoes are fruits. All fruits are foods. Which conclusion necessarily follows?",
-  "choices": [
-   "No mangoes are foods.",
-   "All fruits are mangoes.",
-   "All mangoes are foods.",
-   "All foods are mangoes."
-  ],
-  "answer": 2,
-  "explanation": "The two universal premises imply that all mangoes belong to the group foods.",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
- },
- {
-  "id": 419,
-  "category": "Abstract / Analytical Skills",
-  "question": "All folders are containers. All containers are objects. Which conclusion necessarily follows?",
-  "choices": [
-   "All containers are folders.",
-   "All folders are objects.",
-   "No folders are objects.",
-   "All objects are folders."
+   "The document is approved",
+   "The document is not approved",
+   "The register is incomplete",
+   "Every registered document is approved"
   ],
   "answer": 1,
-  "explanation": "The two universal premises imply that all folders belong to the group objects.",
+  "explanation": "The premise says approval implies registration. If registration is false, approval must be false under the stated rule.",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
  },
  {
-  "id": 420,
+  "id": 2517,
   "category": "Abstract / Analytical Skills",
-  "question": "All violins are instruments. All instruments are objects. Which conclusion necessarily follows?",
+  "question": "Four files A, B, C and D must be processed. A is before C, B is before A, and D is after C. Which file is processed second?",
   "choices": [
-   "All instruments are violins.",
-   "No violins are objects.",
-   "All objects are violins.",
-   "All violins are objects."
+   "A",
+   "B",
+   "C",
+   "D"
   ],
-  "answer": 3,
-  "explanation": "The two universal premises imply that all violins belong to the group objects.",
+  "answer": 0,
+  "explanation": "All constraints form one order: B, A, C, D. A is second.",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2518,
+  "category": "Abstract / Analytical Skills",
+  "question": "A report says, “The office should extend its hours because many applicants arrive after closing.” Which assumption supports the proposal?",
+  "choices": [
+   "Later hours would help at least some of those applicants",
+   "All applicants arrive in the morning",
+   "Longer hours always reduce demand",
+   "Applicants must use only online services"
+  ],
+  "answer": 0,
+  "explanation": "The recommendation depends on extended hours helping the people who arrive late.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2519,
+  "category": "Abstract / Analytical Skills",
+  "question": "Office X completed 48 of 60 requests. Office Y completed 63 of 90. Which office has the higher completion rate, and by how many percentage points?",
+  "choices": [
+   "X by 10 points",
+   "Y by 10 points",
+   "X by 15 points",
+   "Y by 15 points"
+  ],
+  "answer": 0,
+  "explanation": "X completed 48/60 = 80%; Y completed 63/90 = 70%. The gap is 10 percentage points.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2520,
+  "category": "Abstract / Analytical Skills",
+  "question": "If P means an application is complete and Q means it is signed, which condition expresses “complete but not signed”?",
+  "choices": [
+   "P and Q",
+   "Not P and Q",
+   "P and not Q",
+   "Not P and not Q"
+  ],
+  "answer": 2,
+  "explanation": "Complete requires P to be true, while not signed requires Q to be false.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
  },
  {
   "id": 1151,
@@ -9105,79 +9115,84 @@ window.QUESTIONS=[
   "difficulty": "Moderate"
  },
  {
-  "id": 494,
+  "id": 2521,
   "category": "Verbal Skills",
-  "question": "Read: Water consumption fell after a building repaired leaking pipes. Which observation is supported?",
+  "question": "Basahin: Naglagay ng hiwalay na kahon para sa papel ang tanggapan. Pagkaraan ng isang buwan, nabawasan ang papel na napupunta sa pangkalahatang basurahan. Alin ang tuwirang sinusuportahan ng talata?",
   "choices": [
-   "Water prices increased",
-   "All water use stopped",
-   "The building closed",
-   "Water consumption fell after repairs"
-  ],
-  "answer": 3,
-  "explanation": "The decrease followed repairs; the other claims are unsupported.",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
- },
- {
-  "id": 495,
-  "category": "Verbal Skills",
-  "question": "Read: The office extended its hours for one week to serve more applicants. What was the reason for the extension?",
-  "choices": [
-   "To serve more applicants",
-   "To conduct an election",
-   "To close the office permanently",
-   "To reduce access"
+   "Nabawasan ang papel sa pangkalahatang basurahan",
+   "Nadagdagan ang lahat ng uri ng basura",
+   "Tuluyan nang ipinagbawal ang paggamit ng papel",
+   "Nagsara ang tanggapan"
   ],
   "answer": 0,
-  "explanation": "The stated purpose is to accommodate more applicants.",
+  "explanation": "Ito ang tahasang pagbabagong binanggit sa talata. Hindi nakasaad ang ibang pagpipilian.",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
  },
  {
-  "id": 496,
+  "id": 2522,
   "category": "Verbal Skills",
-  "question": "Arrange the steps: 1 Submit the signed form. 2 Fill out the form. 3 Sign the completed form. Which order is logical?",
+  "question": "Piliin ang wastong pangungusap.",
   "choices": [
-   "3-1-2",
-   "1-2-3",
-   "2-3-1",
-   "2-1-3"
-  ],
-  "answer": 2,
-  "explanation": "Complete the form, sign it, then submit it.",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
- },
- {
-  "id": 497,
-  "category": "Verbal Skills",
-  "question": "Arrange the steps: 1 Send the email. 2 Draft the email. 3 Review the draft. Which order is logical?",
-  "choices": [
-   "2-3-1",
-   "1-3-2",
-   "3-2-1",
-   "2-1-3"
-  ],
-  "answer": 0,
-  "explanation": "Draft first, review next, and send last.",
-  "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
- },
- {
-  "id": 500,
-  "category": "Verbal Skills",
-  "question": "Arrange the steps: 1 Return the book. 2 Borrow the book. 3 Read the borrowed book. Which order is logical?",
-  "choices": [
-   "2-1-3",
-   "2-3-1",
-   "3-1-2",
-   "1-2-3"
+   "Nagsumite siya nang ulat kahapon.",
+   "Nagsumite siya ng ulat kahapon.",
+   "Nagsumite siya ng kahapon ulat.",
+   "Nagsumite siya nang ang ulat."
   ],
   "answer": 1,
-  "explanation": "Borrow, read, and then return the book.",
+  "explanation": "Ginagamit ang ng bilang pananda sa layon ng pandiwang nagsumite. Ang ulat ang layon.",
   "scopeVersion": "2027-03-14",
-  "difficulty": "Moderate"
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2523,
+  "category": "Verbal Skills",
+  "question": "Ano ang pinakamalapit na kahulugan ng masinop sa pangungusap: Masinop ang kawani sa paggamit ng kagamitan?",
+  "choices": [
+   "Maingat at hindi magastos",
+   "Palaging nagmamadali",
+   "Madalas malito",
+   "Mahilig mag-aksaya"
+  ],
+  "answer": 0,
+  "explanation": "Ang masinop ay tumutukoy sa maingat at matipid na paggamit o pag-aasikaso.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2524,
+  "category": "Verbal Skills",
+  "question": "Choose the correct completion: Neither the manager nor the assistants ___ available when the visitor arrived.",
+  "choices": [
+   "was",
+   "were",
+   "is",
+   "has been"
+  ],
+  "answer": 1,
+  "explanation": "With neither/nor, the verb agrees with the nearer subject, assistants, which is plural. Arrived establishes past time.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
+ },
+ {
+  "id": 2525,
+  "category": "Verbal Skills",
+  "question": "Arrange the sentences into a coherent paragraph: (1) As a result, clients spent less time waiting. (2) The office introduced an appointment system. (3) Before the change, long queues were common. (4) The system spread visits throughout the day.",
+  "choices": [
+   "3-2-4-1",
+   "2-1-3-4",
+   "4-3-1-2",
+   "1-4-2-3"
+  ],
+  "answer": 0,
+  "explanation": "The paragraph starts with the prior problem, introduces the solution, explains its operation, and ends with the outcome.",
+  "scopeVersion": "2027-03-14",
+  "difficulty": "Moderate",
+  "contentReviewDate": "2026-11-24"
  },
  {
   "id": 473,
