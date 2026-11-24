@@ -15,6 +15,9 @@ SOURCES = {
     'CSC scope announcement': 'https://www.csc.gov.ph/examination-advisories/examination-announcement-no-06-s-2026-career-service-examination-pen-and-paper-test-for-professional-and-sub-professional-levels-14-march-2027',
     'Philippine Constitution': 'https://lawphil.net/consti/cons1987.html',
     'RA 6713': 'https://lawphil.net/statutes/repacts/ra1989/ra_6713_1989.html',
+    'RA 9003': 'https://lawphil.net/statutes/repacts/ra2001/ra_9003_2001.html',
+    'RA 8749': 'https://lawphil.net/statutes/repacts/ra1999/ra_8749_1999.html',
+    'RA 9275': 'https://lawphil.net/statutes/repacts/ra2004/ra_9275_2004.html',
     'UDHR': 'https://www.un.org/en/about-us/universal-declaration-of-human-rights',
     'Independent topic guide: CSE PH': 'https://cse.ph/reviewers/cse/online-reviewer-quiz/',
     'Independent topic guide: CSE Pass': 'https://csepass.ph/civil-service-exam-reviewer',
@@ -49,7 +52,7 @@ class Page(HTMLParser):
             if self.href is not None: self.label.append(data)
 
 def fetch(url):
-    with urlopen(Request(url,headers={'User-Agent':'CivilPrep-source-monitor/1.0 (public educational references)'}),timeout=15) as r:
+    with urlopen(Request(url,headers={'User-Agent':'CivilPrep-source-monitor/2.7 (public educational references)', 'Accept':'text/html,application/xhtml+xml', 'Accept-Language':'en-PH,en;q=0.8'}),timeout=15) as r:
         if r.status!=200: raise ValueError('HTTP '+str(r.status))
         if urlparse(r.url).hostname not in {urlparse(url).hostname, 'www.'+urlparse(url).hostname.removeprefix('www.'),urlparse(url).hostname.removeprefix('www.')}:
             raise ValueError('Unexpected redirect domain')
@@ -76,7 +79,14 @@ def monitor(old):
     for name,url in SOURCES.items():
         before=previous.get(name,{})
         try:
-            p,body=fetch(url)
+            used=url
+            try:
+                p,body=fetch(url)
+            except Exception:
+                if not name.startswith('CSC'): raise
+                used=url.replace('https://www.csc.gov.ph/','https://csc.gov.ph/')
+                if used==url: raise
+                p,body=fetch(used)
             if name=='CSC advisories':
                 found=csc_links(p)
                 if not found: raise ValueError('No matching CSE advisory links; review parser')
@@ -84,9 +94,9 @@ def monitor(old):
                 body=json.dumps(found,sort_keys=True)
             digest=hashlib.sha256(body.encode()).hexdigest()
             if before.get('hash') and before['hash']!=digest: changed.append(name)
-            results.append({'name':name,'url':url,'status':'checked','hash':digest,'lastSuccessfulCheck':NOW,'changeDetected':bool(before.get('changeDetected') or name in changed)})
+            results.append({'name':name,'url':url,'status':'checked','checkedUrl':used,'hash':digest,'lastSuccessfulCheck':NOW,'changeDetected':bool(before.get('changeDetected') or name in changed)})
         except Exception as exc:
-            results.append({'name':name,'url':url,'status':'unavailable','hash':before.get('hash'),'lastSuccessfulCheck':before.get('lastSuccessfulCheck'),'changeDetected':bool(before.get('changeDetected'))})
+            results.append({'name':name,'url':url,'status':'unavailable','errorType':type(exc).__name__,'httpStatus':getattr(exc,'code',None),'hash':before.get('hash'),'lastSuccessfulCheck':before.get('lastSuccessfulCheck'),'changeDetected':bool(before.get('changeDetected'))})
             print(f'{name}: {type(exc).__name__}',file=sys.stderr)
     return results,links,changed
 
@@ -158,7 +168,7 @@ def publish(bank,pack,cycle,status):
     oldtiers=collections.Counter((q['category'],q['difficulty']) for q in bank)
     assert oldtiers==collections.Counter((q['category'],q['difficulty']) for q in new)
     (ROOT/'questions.js').write_text('window.QUESTIONS='+json.dumps(new,ensure_ascii=False,indent=1)+';\n')
-    version='2.6-'+cycle
+    version='2.7-'+cycle
     p=ROOT/'difficulty.js'; p.write_text(re.sub(r"const version='[^']+'",f"const version='{version}'",p.read_text(),count=1))
     p=ROOT/'sw.js'; p.write_text(re.sub(r"const CACHE='[^']+'",f"const CACHE='civilprep-shell-v{version}'",p.read_text(),count=1))
     status.setdefault('publishedCycles',[]).append(cycle); status['lastBankUpdate']=NOW; status['bankVersion']=version
@@ -173,9 +183,12 @@ if __name__=='__main__':
     dt.date.fromisoformat(today)
     status=read('updates/status.json',{}); bank=load_js('questions.js'); print('Validated records:',validate(bank)); config=load_js('exam-config.js')
     status['calendar']=[x['date'] for x in config['calendar']]; status['scopeDate']=config['scopeDate']
-    if args.approve: bank=publish(bank,read('updates/candidates.json'),args.approve,status)
     if not args.no_network:
         status['sources'],status['advisories'],changed=monitor(status); status['lastMonitorRun']=NOW; status['lastRunChanges']=changed
+    if args.approve:
+        if not args.no_network and any(x['status']!='checked' or x.get('changeDetected') for x in status.get('sources',[]) if x['name'].startswith('CSC')):
+            raise ValueError('Publication blocked: official CSC sources unavailable or changed. Review and resolve before approving.')
+        bank=publish(bank,read('updates/candidates.json'),args.approve,status)
     pending=read('updates/candidates.json')
     if not pending:
         completed=sorted(d for d in status['calendar'] if d<today and d not in status.get('publishedCycles',[]))
