@@ -11,7 +11,65 @@
   "pendingCycle": null,
   "candidateCount": 0,
   "sourceReviewRequired": false,
-  "lastMonitorRun": null,
-  "sources": [],
-  "advisories": []
+  "lastMonitorRun": "2026-11-24T15:55:00+08:00",
+  "sources": [
+    {
+      "name": "CSC advisories",
+      "url": "https://www.csc.gov.ph/examination-advisories",
+      "status": "unavailable",
+      "hash": null,
+      "lastSuccessfulCheck": null,
+      "changeDetected": false
+    },
+    {
+      "name": "CSC scope announcement",
+      "url": "https://www.csc.gov.ph/examination-advisories/examination-announcement-no-06-s-2026-career-service-examination-pen-and-paper-test-for-professional-and-sub-professional-levels-14-march-2027",
+      "status": "unavailable",
+      "hash": null,
+      "lastSuccessfulCheck": null,
+      "changeDetected": false
+    },
+    {
+      "name": "Philippine Constitution",
+      "url": "https://lawphil.net/consti/cons1987.html",
+      "status": "checked",
+      "hash": "7d5817e9065097866eb63b6c5a9e7887b916cd81d998c514bfa16e98485bf035",
+      "lastSuccessfulCheck": "2026-11-24T15:55:00+08:00",
+      "changeDetected": false
+    },
+    {
+      "name": "RA 6713",
+      "url": "https://lawphil.net/statutes/repacts/ra1989/ra_6713_1989.html",
+      "status": "checked",
+      "hash": "25b396809394c3b089a8e245f32f97218840b31329b0e9a6172601021baf9a3c",
+      "lastSuccessfulCheck": "2026-11-24T15:55:00+08:00",
+      "changeDetected": false
+    },
+    {
+      "name": "UDHR",
+      "url": "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+      "status": "checked",
+      "hash": "9a198dbc327e84a38b2e8f0444a72cdf72ee5c5c691bd0bb633e02cfd654592f",
+      "lastSuccessfulCheck": "2026-11-24T15:55:00+08:00",
+      "changeDetected": false
+    },
+    {
+      "name": "Independent topic guide: CSE PH",
+      "url": "https://cse.ph/reviewers/cse/online-reviewer-quiz/",
+      "status": "checked",
+      "hash": "c52499c87c5ebcb0080264a6b8e5c4fccd11a16007283ecf4a43b66a0c800b10",
+      "lastSuccessfulCheck": "2026-11-24T15:55:00+08:00",
+      "changeDetected": false
+    },
+    {
+      "name": "Independent topic guide: CSE Pass",
+      "url": "https://csepass.ph/civil-service-exam-reviewer",
+      "status": "checked",
+      "hash": "4d8229c93c6a7172609650ac767e38dd556d06572251a6c5bceb9f401bb1892f",
+      "lastSuccessfulCheck": "2026-11-24T15:55:00+08:00",
+      "changeDetected": false
+    }
+  ],
+  "advisories": [],
+  "lastRunChanges": []
 }
