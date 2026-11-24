@@ -1,0 +1,83 @@
+name: CivilPrep seasonal updates and Pages
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '23 1 * * 1' # Mondays 09:23 Philippines; scheduled runs can be delayed
+  workflow_dispatch:
+    inputs:
+      approve_cycle:
+        description: 'After reviewing updates/candidates.json, enter its completed exam date (YYYY-MM-DD) to publish. Leave blank to check only.'
+        required: false
+        type: string
+        default: ''
+      acknowledge_sources:
+        description: 'Mark detected source changes reviewed (only after editorial review).'
+        required: false
+        type: boolean
+        default: false
+concurrency:
+  group: civilprep-pages
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Monitor public references and prepare seasonal drafts
+        env:
+          APPROVE_CYCLE: ${{ inputs.approve_cycle }}
+          ACKNOWLEDGE: ${{ inputs.acknowledge_sources }}
+        run: |
+          args=()
+          if [[ -n "$APPROVE_CYCLE" ]]; then args+=(--approve "$APPROVE_CYCLE"); fi
+          if [[ "$ACKNOWLEDGE" == 'true' ]]; then args+=(--acknowledge-sources); fi
+          python scripts/seasonal_update.py "${args[@]}"
+      - name: Persist update status and approved bank
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add updates/ questions.js difficulty.js sw.js
+          if ! git diff --cached --quiet; then
+            git commit -m 'CivilPrep: scheduled source and question bank check'
+            git push origin HEAD:main
+          fi
+      - name: Open review reminder if a season ends or sources change
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/review_issue.py
+      - uses: actions/configure-pages@v5
+      - name: Assemble static app only
+        run: |
+          mkdir -p _site/updates
+          cp index.html *.js *.css manifest.webmanifest .nojekyll _site/
+          cp -r assets icons _site/
+          cp updates/status.json _site/updates/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy CivilPrep
+        id: deployment
+        uses: actions/deploy-pages@v4
